@@ -26,31 +26,25 @@ def add_day(current_date):
 for i in range(len(week_days)): 
 	if current_day == week_days[i]:
 		delivery_count = 1
-    		print(findDay(current_date)) 
-
+		print(add_day(current_date))
 	elif current_day == friday and current_time <= time:
-        	delivery_count = 3
-		print(findDay(current_date)) 
-
-		#increment_Function
-	elif current_day == friday and current_time > time:
-		delivery_count = 4
-		print(findDay(current_date)) 
-
-        	        
+		delivery_count = 3
+		print(add_day(current_date)) 
+#increment_Function
+	elif current_day == friday and current_time > time:	
+		delivery_count = 4	
+		print(add_day(current_date)) 
+	else :
+		print("not working")
 #weekends delivery date
-
 	if current_day == week_ends[0]:
 		delivery_count=3
-		print(findDay(current_date)) 
-
-		#increment_Function
-
-	elif current_day == week_ends[1]:
+		print(add_day(current_date))
+#increment_Function
+		elif current_day == week_ends[1]:
 		delivery_count=2
-		print(findDay(current_date)) 
-
-		#increment_Function
+		print(add_day(current_date)) 
+#increment_Function
 
 
 
