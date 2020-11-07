@@ -31,9 +31,11 @@ for i in range(len(week_days)):
 		delivery_count = 3
 		print(add_day(current_date)) 
 #increment_Function
-		elif current_day == friday and current_time > time:	
+	elif current_day == friday and current_time > time:	
 		delivery_count = 4	
 		print(add_day(current_date)) 
+	else :
+		print("not working")
 #weekends delivery date
 	if current_day == week_ends[0]:
 		delivery_count=3
