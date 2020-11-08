@@ -20,7 +20,7 @@ delivery_count = 0
 
 def add_day(current_date):
 	days = delivery_count
-	delevery_date = current_date + timedelta(days=2)
+	delevery_date = current_date + timedelta(delivery_count)
 	delivery_day = datetime.datetime.strptime(str(delevery_date), '%Y-%m-%d').weekday() 
 	return (calendar.day_name[delivery_day]) 
 
