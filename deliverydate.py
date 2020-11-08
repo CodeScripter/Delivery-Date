@@ -11,7 +11,6 @@ time = "15:00:00"
 current_date = date.today()
 delivery_count = 0
 def add_day(current_date):
-	days = delivery_count
 	delivery_date = current_date + timedelta(delivery_count)
 	print("delivery date and day:- ",delivery_date)
 	delivery_day = datetime.datetime.strptime(str(delivery_date), '%Y-%m-%d').weekday() 
