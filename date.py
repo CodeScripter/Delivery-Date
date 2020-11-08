@@ -1,3 +1,6 @@
+from datetime import datetime, date
+from datetime import timedelta
+from datetime import datetime
 import time
 import datetime
 import calendar 
@@ -35,15 +38,15 @@ for i in range(len(week_days)):
 		delivery_count = 4	
 		print(add_day(current_date)) 
 	else :
-		print("not working")
+		print()
 #weekends delivery date
-	if current_day == week_ends[0]:
-		delivery_count=3
-		print(add_day(current_date))
+if current_day == week_ends[0]:
+	delivery_count=3
+	print(add_day(current_date))
 #increment_Function
-		elif current_day == week_ends[1]:
-		delivery_count=2
-		print(add_day(current_date)) 
+elif current_day == week_ends[1]:
+	delivery_count=2
+	print(add_day(current_date)) 
 #increment_Function
 
 
